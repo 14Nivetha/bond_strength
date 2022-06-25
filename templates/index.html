@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <b> <title>Bond Prediction</title></b>
+</head>
+<body>
+    <hr><h1>Bond Prediction</h1><hr>
+    <h2></h2>
+    <div class="container-i">
+        <form action = "{{url_for('predict')}}" class="form-i" method="post">
+           mm: <input type="number" name="cb" placeholder="tf(mm)eg:1-999" input style="border:2px solid rgb(216, 57, 57);padding:7px;"><br><br><br>
+           Mpa:<input type="number" name="Mpa" placeholder="Fc(Mpa)eg:1-999"input style="border: 2px solid  rgb(216, 57, 57);padding:7px;" ><br><br><br>
+           Gpa:<input type="number" name="Gpa" placeholder="Ef(Gpa)eg:1-999"input style="border: 2px solid rgb(216, 57, 57);padding:7px;" ><br><br><br>
+           na: <input type="number" name="na" placeholder="Lf(mm)eg:1-999"input style="border: 2px solid rgb(216, 57, 57);padding:7px;"  ><br><br><br>
+           st:<input type="number" name="st" placeholder="bf(mm)eg:1-999" input style="border: 2px solid rgb(216, 57, 57);padding:7px;" ><br><br><br>
+           pr:<input type="number" name="pr" placeholder="bc(mm)eg:1-999" input style="border: 2px solid rgb(216, 57, 57);padding:7px;" ><br><br><br>
+           
+
+            <!--Submit Button-->
+             <button class="jeeet" type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+             
+        </form>
+        <br>
+        <b>{{prediction_text}} </b>
+         
+         </div>
+         <style>
+            body
+                {
+                    text-align: center;
+                    color: rgb(7, 20, 20);
+                    background-repeat: no-repeat;
+                    background-image: url('../static/image.jpeg');
+                    background-size: cover;
+                }
+        </style>
+    
+    
+         </body>
+         </html
+     
+     
+    
+     
+    
+
+    
