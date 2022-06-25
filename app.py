@@ -27,7 +27,7 @@ def predict():
 
     out = pred
 
-    return render_template('index.html', prediction_text='Income Level{}'.format(float(pred)))
+    return render_template('index.html', prediction_text='Bond Strength of the concrete{}'.format(float(pred)))
 
 
 if __name__ == '__main__':
